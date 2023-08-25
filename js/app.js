@@ -3,7 +3,7 @@ const reviews = [
     id: 1,
     name: "Nicholas Adkins",
     job: " Product Manager at SOLVIT AFRICA",
-    img: "./images/testimonials/t2.jpg",
+    img: "/css/images/testimonials/t2.jpg",
     text: "I did notice a couple of areas where there might be room for improvement For instance, in the user profile section, there were a few instances where  the user experience could be enhanced",
   },
 
@@ -11,7 +11,7 @@ const reviews = [
     id: 2,
     name: "Meech Flenory",
     job: "CEO of IBM Global",
-    img: "./images/testimonials/t1.jpg",
+    img: "/css/images/testimonials/t1.jpg",
 
     text: " I wanted to take a moment to provide you with some feedback on the recent project you completed. Overall, I'm impressed with your work and the effort you put into it. Your dedication and attention to detail are truly valuable to the team.",
   },
