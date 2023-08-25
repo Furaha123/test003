@@ -477,8 +477,11 @@ a:hover {
 }
 
 .services__items {
-  display: grid;
+  display: flex;
   gap: 55px;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .services__items .service__item {
   position: relative;
@@ -487,7 +490,7 @@ a:hover {
   border-radius: 20px;
   margin-bottom: 0;
   padding: 30px;
-  width: 40%;
+  /* width: 40%; */
 }
 
 .services__items .service__item:hover {
@@ -986,11 +989,19 @@ a:hover {
     transform: translateY(-50%);
     margin-top: 0;
   }
-  .services__items {
-    grid-template-columns: 1fr;
-  }
+
   .services__items .service__item {
-    padding: 48px 48px 41px 48px;
+    padding: 88px 88px 71px 88px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services__items {
+    flex-direction: column;
+  }
+
+  .service__item {
+    margin-bottom: 20px;
   }
 }
 #backToTop {
