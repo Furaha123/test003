@@ -112,80 +112,81 @@ p {
   color: #fff;
 }
 
-.nav-bar {
-  overflow: hidden;
-  background-color: #1f1f1f;
+/*
+=============== 
+Navbar
+===============
+*/
+nav {
+  background: #1f1f1f;
+  box-shadow: #191919;
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  color: #666;
+  background: transparent;
+  border-color: transparent;
+
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  color: #28e98c;
+  transform: rotate(90deg);
 }
 
-/* Add a media query for smaller screens to show the menu icon */
-/* Add a media query for smaller screens to show the menu icon */
-@media (max-width: 768px) {
-  /* Correct the class name here */
-  .nav-stylig {
+.links a {
+  color: #fff;
+  font-size: 10px;
+  text-transform: capitalize;
+  display: block;
+}
+.links a:hover {
+  background: #999;
+  color: #28e98c;
+  padding-left: 2.5rem;
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+}
+.show-links {
+  height: 10rem;
+}
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
     display: none;
   }
-  .nav-bar {
-    position: relative;
+  .links {
+    height: auto;
+    display: flex;
+    font-size: 10px;
   }
-  .nav-bar::before {
-    content: "☰"; /* Add a hamburger icon or other mobile menu indicator */
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    cursor: pointer;
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
   }
-  .nav-bar.show-mobile-nav .nav-stylig {
-    display: block; /* Show the navigation when the mobile menu is active */
-    position: absolute;
-    top: 50px; /* Adjust as needed */
-    right: 0;
-    background-color: white; /* Add a background color */
-    border: 1px solid #ddd; /* Add a border */
-    padding: 10px;
+  .links a:hover {
+    padding: 0;
+    background: transparent;
   }
-}
-/* ... Rest of the CSS ... */
-
-.nav-bar a {
-  text-decoration: none;
-  color: #fff;
-  margin-left: 20px;
-  float: right;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 17px;
-  /* overflow: auto; */
-}
-.nav-stylig {
-  background: #1f1f1f;
-  height: 80px;
-  width: 100%;
-}
-
-.lists {
-  float: right;
-  margin-right: 20px;
-}
-.lists ul li {
-  display: inline-block;
-  line-height: 40px;
-  margin: 0 5px;
-}
-.lists ul li a {
-  color: white;
-  font-size: 17px;
-  padding: 2px 4px;
-  border-radius: 3px;
-  border-radius: 3px;
-  text-transform: uppercase;
-}
-
-a.activ,
-a:hover {
-  background: #999;
-  transition: 0.5s;
 }
 /* RESPONSIVE SLIDEBAR  */
 /* Sidebar Menu Styles */
